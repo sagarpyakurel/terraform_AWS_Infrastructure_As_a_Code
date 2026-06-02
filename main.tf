@@ -1,5 +1,13 @@
 #provider
 terraform {
+
+  cloud {
+    organization = "SagarPyakurelOrganization"
+    workspaces {
+      project = "SagarPyakurelProject"
+      name    = "SagarPyakurelWorkspace"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,9 +18,9 @@ terraform {
 
 #configure aws provider
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
-resource "aws_vpc" "sagar-vpc"{
-  cidr_block= "10.0.0.0/16"
+resource "aws_vpc" "sagar-vpc" {
+  cidr_block = "10.0.0.0/16"
 }

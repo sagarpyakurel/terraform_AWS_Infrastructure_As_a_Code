@@ -1,0 +1,7 @@
+vpc_name = "dev-vpc"
+#public_subnet_name = "dev-public-subnet"
+#private_subnet_name= "dev-private-subnet"
+#internet_gateway_name ="dev-igw"
+#Nat_gateway_name ="dev-nat-gw"
+#public_route_table_name = "dev-public-rt"
+#private_route_table_name = "dev-private-rt"

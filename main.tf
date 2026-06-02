@@ -1,6 +1,4 @@
-#provider
 terraform {
-
   cloud {
     organization = "SagarPyakurelOrganization"
     workspaces {
@@ -22,4 +20,5 @@ provider "aws" {
   region = "us-east-2"
   profile= "personal"
 }
+
 

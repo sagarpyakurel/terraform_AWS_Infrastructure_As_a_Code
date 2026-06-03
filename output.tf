@@ -1,6 +1,7 @@
 output "vpc_cidr_block" {
   value       = aws_vpc.my_vpc.cidr_block
   description = "This is vpc cidr block"
+  sensitive   = true
 }
 
 output "public_subnet_cidr_block" {

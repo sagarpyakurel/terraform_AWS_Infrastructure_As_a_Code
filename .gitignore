@@ -4,3 +4,5 @@
 terraform.tfvars
 .terraform.lock.hcl
 main.tf.bak
+planfile
+planfiles

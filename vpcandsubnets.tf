@@ -17,7 +17,7 @@ resource "aws_subnet" "my_public_subnet" {
   map_public_ip_on_launch = true
   cidr_block              = "10.0.1.0/24"
   tags = {
-    Name = "public_subnet"
+    Name = var.public_sn
 
   }
 }
@@ -28,7 +28,7 @@ resource "aws_subnet" "my_private_subnet" {
   map_public_ip_on_launch = false
   cidr_block              = "10.0.2.0/24"
   tags = {
-    Name = "private_subnet"
+    Name = var.private_sn
   }
 
 }

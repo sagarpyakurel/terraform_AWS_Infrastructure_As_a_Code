@@ -5,11 +5,11 @@ resource "aws_route" "route_for_public_sn" {
 }
 
 
-# resource "aws_route" "route_for_private_sn" {
-#   route_table_id         = aws_route_table.my_private_rtb.id
-#   destination_cidr_block = "0.0.0.0/0"
-#   nat_gateway_id         = aws_nat_gateway.my_ngw.id
-# }
+resource "aws_route" "route_for_private_sn" {
+  route_table_id         = aws_route_table.my_private_rtb.id
+  destination_cidr_block = "0.0.0.0/0"
+  nat_gateway_id         = aws_nat_gateway.my_ngw.id
+}
 
 
 

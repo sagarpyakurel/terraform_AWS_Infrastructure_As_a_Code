@@ -5,7 +5,7 @@ locals {
 }
 
 resource "aws_key_pair" "my_key" {
-  key_name    = "ssh_key"
+  key_name   = "ssh_key"
   public_key = file(local.publickey_path)
 }
 

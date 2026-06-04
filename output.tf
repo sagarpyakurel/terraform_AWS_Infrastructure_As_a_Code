@@ -32,6 +32,9 @@ output "private_ec2_private_ip" {
   value = aws_instance.private_ec2.private_ip
 }
 
+output "ssh_key_name" {
+	value = "ssh_key"
+}
 
 
 

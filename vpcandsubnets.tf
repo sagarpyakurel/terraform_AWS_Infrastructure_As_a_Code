@@ -4,6 +4,7 @@ locals {
 }
 
 
+
 resource "aws_vpc" "my_vpc" {
   cidr_block           = "${local.cmn_val}.0.0/16"
   enable_dns_support   = "true"

@@ -1,5 +1,7 @@
 # Terraform AWS Infrastructure as Code
 
+![AWS Infrastructure Diagram](image1.png)
+
 This project sets up a complete AWS infrastructure using Terraform with a VPC, public and private subnets, security groups, and EC2 instances.
 
 ## Project Architecture

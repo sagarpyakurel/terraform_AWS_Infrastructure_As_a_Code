@@ -171,7 +171,7 @@ terraform output private_ec2_private_ip
 
 ### Destroy Infrastructure
 
-⚠️ **Warning:** This will delete all AWS resources created by this Terraform configuration.
+**Warning:** This will delete all AWS resources created by this Terraform configuration.
 
 ```bash
 terraform destroy -var-file="dev.tfvars"
